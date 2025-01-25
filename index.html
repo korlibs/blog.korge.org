@@ -1,0 +1,149 @@
+---
+title: Home
+permalink: "{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+layout: default
+pagination: { data: collections.posts, size: 12, reverse: true }
+---
+
+{% set page_n = (pagination.pageNumber + 1) | default(1) %}
+{% set pagination_size = 12 %}
+
+{% if page_n == 1 %}
+<!-- Home Jumbotron
+================================================== -->
+<section class="intro full-width">
+    <div class="wrapintro" style="position:relative; margin-top: 80px;">
+        <!--<h1><img src="/assets/images/ui/korge-512.png" title="KorGE Game Engine" alt="KorGE Game Engine" style="width:256px;height:256px;" /></h1>-->
+        <h1 style="color:#400796;padding:0 70px;"><img src="/assets/images/logo-opt.svg" title="KorGE Game Engine" alt="KorGE Game Engine" style="width:1.5em;height:1.5em;" />&nbsp;KorGE Game Engine</h1>
+        <h2 class="lead" style="padding:0 70px;">The Kotlin Multiplatform Game Engine You Will Love</h2>
+        <a href="https://docs.korge.org/getting-started/" target="_blank" class="btn">Get Started</a>
+        <img src="/assets/images/mascot/512-Gest.webp" style="position:absolute;left:-130px;bottom:-64px;filter:brightness(1.2) contrast(1.1);" />
+        <img src="/assets/images/mascot/512-Koral.webp" style="position:absolute;right:-160px;bottom:-64px;filter:brightness(1.2) contrast(1.1);" />
+    </div>
+</section>
+{% endif %}
+
+<!-- Featured
+================================================== -->
+<section class="featured-posts">
+
+    <!--
+    <div class="section-title">
+        <h2><span>Featured</span></h2>
+    </div>
+    -->
+
+    <div class="row listfeaturedtag">
+
+        {% for post in site.posts %}
+
+        {% if post.featured %}
+
+        {% include "featuredbox.html" %}
+
+        {% endif %}
+
+        {% endfor %}
+
+    </div>
+
+</section>
+
+<!-- Posts Index
+================================================== -->
+{% if pagination.previous_page %}
+{% if pagination.previous_page > 0 %}
+<div id="jumptopageof"></div>
+{% endif %}
+{% endif %}
+
+<section class="recent-posts row">
+
+    <div class="col-sm-4 order-last order-md-first">
+        {% include "sidebar.html" %}
+    </div>
+
+    <div class="col-sm-8">
+
+        {% include "debug.html" %}
+
+        <div class="section-title">
+            <h2><span>All Stories</span></h2>
+        </div>
+
+        <!-- Pagination -->
+        <div class="bottompagination" style="margin-bottom: 2em;">
+
+            <span class="navigation" role="navigation">
+
+                {% include "pagination.html" %}
+
+            </span>
+
+        </div>
+
+        <div class="masonrygrid row listrecent">
+
+            {% for post in pagination.items %}
+
+
+<!-- begin post -->
+{% set author = site.authors[post.author] %}
+
+<div class="col-md-6 grid-item">
+<div class="card">
+    <a href="{{ post.url | absolute_url }}">
+        <div style="position:relative;overflow:hidden;width:100%;">
+            <div style="
+                width:100%;
+                aspect-ratio: 706/370;
+                background-image: url('{{ post.data.featured_image | absolute_url }}');
+                background-size: cover;
+                background-position: center center;
+            "
+                 title="{{ post.title }}"
+            ></div>
+        </div>
+    </a>
+    <div class="card-block">
+        <h2 class="card-title"><a href="{{ post.url | absolute_url }}">{{ post.data.title }}</a></h2>
+        <h4 class="card-text">{{ post.excerpt }}</h4>
+        <div class="metafooter">
+            <div class="wrapfooter">
+                {% set author = post.data.author %}
+                {% if author %}
+                <span class="meta-footer-thumb">
+                <img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+                </span>                
+                <span class="author-meta">
+                <span class="post-name"><a target="_blank" href="{{ author.web }}">{{ author.display_name }}</a></span><br/>
+                {% endif %}
+                <span class="post-date">{{ post.date | date_short }}</span>
+                </span>
+                <span class="post-read-more"><a href="{{ post.url | absolute_url }}" title="Read Story"><i class="fa fa-link"></i></a></span>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end post -->
+
+            {% endfor %}
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="bottompagination">
+
+            <span class="navigation" role="navigation">
+
+                {% include "pagination.html" %}
+
+            </span>
+
+        </div>
+
+    </div>
+
+</section>

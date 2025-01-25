@@ -1,0 +1,13 @@
+:root {
+    --color0: #222;
+    --color1: #1e2630;
+    --color2: #ffffff;
+    --color3: #666;
+    --color3b: #999;
+    --color4: #ccc;
+    --color5: #fff;
+}
+
+body {
+    cursor: default;
+}

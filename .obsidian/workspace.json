@@ -1,0 +1,237 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "64809d05e617464c",
+    "type": "split",
+    "children": [
+      {
+        "id": "76864fb90bed7692",
+        "type": "tabs",
+        "dimension": 56.010568031704096,
+        "children": [
+          {
+            "id": "676a14eb0ccc2fd0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      },
+      {
+        "id": "75654169602d9b4d",
+        "type": "tabs",
+        "dimension": 43.989431968295904,
+        "children": [
+          {
+            "id": "2fdb7c408d305d59",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4f7c8260316b60e6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "{%",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "1be8e478d6144d19",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Blog.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Blog"
+            }
+          },
+          {
+            "id": "b754e41daca017ca",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Blog.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Blog"
+            }
+          },
+          {
+            "id": "75c60ddfe8638199",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "4fe7c2f895f486bb",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 308.5
+  },
+  "right": {
+    "id": "79a69aff0f75eeea",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a40fd8bd7169a6c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "58c2d0ee441bef13",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "dbfolder:Create a new database table": false,
+      "homepage:Open homepage": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-kanban:Create new board": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "e7a7b303c61786dc",
+  "lastOpenFiles": [
+    "Posts.md",
+    "posts/2024/2024-01-08-/jobes-legacy-twitch-channel.md",
+    "posts/2024/2024-08-21-/korge-forge-2024.2.0.2.md",
+    "Blog Posts.md",
+    "Ideas.md",
+    "Sandbox.md",
+    "Posts Draft.md",
+    "Posts Private.md",
+    "posts/2021/2021-09-19-results-2nd-korge-game-jam.md",
+    "posts/2022/2022-11-24-sponsors-2022-nov-part1.md",
+    "images/7001b1c1-a97a-4309-88cd-8d359b0a2bd1-f0bd849c-c77f-4e46-8405-c452bade2e36-0.jpg",
+    "posts/2022/2022-11-25-sponsors-2022-nov-part2.md",
+    "images/7001b1c1-a97a-4309-88cd-8d359b0a2bd1-ba5378b3-9793-4dc6-91ed-f83596f937fe-0.jpg",
+    "posts/2022/2022-11-28-sponsors-2022-nov-part3.md",
+    "images/7001b1c1-a97a-4309-88cd-8d359b0a2bd1-bdbecb84-8829-4817-89fd-514e34479e56-0.jpg",
+    "posts/2022/2022-11-29-sponsors-2022-nov-part4.md",
+    "images/jam/twitter-banner-gamejam.png",
+    "assets/images/image-1.png",
+    "assets/images/titles/funguage.png",
+    "assets/images/favicon/android-icon-192x192.png",
+    "assets/images/Screenshot-2019-03-17-at-06.39.29.png",
+    "assets/images/51935839105_7.png",
+    "assets/images/2018-08-25--10-.png",
+    "posts/2024/2024-02-29-/korge-whats-happening-29-feb-2024.md",
+    "posts/2024/2024-02-22-/korge-whats-happening-22-feb-2024.md",
+    "posts/2024/2024-02-07-/korge-whats-happening-7-feb-2024.md",
+    "posts/2023/2023-10-05-/korge-5.0.md",
+    "posts/2023/2023-07-06-/dungeon-explorer-part-1.md",
+    "posts/2023/2023-05-23-korge-intellij-plugin-4.0.1.md",
+    "posts/2023/2023-05-11-korge-4.0.md",
+    "posts/2022/2022-06-27-korge-hotreloading.md",
+    "posts/2017/2017-01-29-first-public-release.md",
+    "posts/2022/2022-10-24-korge-mascots.md",
+    "posts/2020/2020-10-07-korge-tutorial-writing-2048-game-step-4-data-saving.md",
+    "posts/2020/2020-07-28-korge-tutorial-writing-2048-game-step-3-animation.md",
+    "posts/2020/2020-07-01-korge-tutorial-writing-2048-game-step-2-controls.md",
+    "images/2.2",
+    "images/jam",
+    "images/3.0",
+    "images/titles",
+    "images/mascot",
+    "images/favicon/manifest.json",
+    "images/favicon/favicon.ico",
+    "images/favicon/browserconfig.xml",
+    "images/favicon",
+    "images/ui"
+  ]
+}

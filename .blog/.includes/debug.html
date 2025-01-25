@@ -1,0 +1,19 @@
+{% if debug %}
+<p>
+    <a href="/logout">Logout</a>
+    - <a href="/login/fake?price=0">Login 0</a>
+    - <a href="/login/fake?price=5">Login 5</a>
+    - <a href="/login/fake?price=10">Login 10</a>
+    - <a href="/login/fake?price=15">Login 15</a>
+    - <a href="/login/fake?price=30">Login 30</a>
+
+    ::
+
+    <strong>Login:</strong> <span>{{ session.login }}</span>
+    - <strong>Price:</strong> <span>{{ session.price }}</span>
+    - <strong>Platform:</strong> <span>{{ session.platform }}</span>
+
+</p>
+{% else %}
+<!-- LOGIN: login={{ session.login }}, isSponsor={{ session.isSponsor }}, price={{ session.price }}, platform={{ session.platform }} -->
+{% endif %}

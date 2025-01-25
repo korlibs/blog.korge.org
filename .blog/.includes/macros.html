@@ -1,0 +1,73 @@
+{% macro taglist(tags) %}
+{% for tag in tags %}
+{% if loop.index > 1 %}, {% endif %}
+<a href="/tags/{{ tag }}" style="text-decoration: none; font-weight: bold; color:blueviolet">{{ tag | upper }}</a>
+{% endfor %}
+{% endmacro %}
+
+{% macro cardlist(cards, highlights = []) %}
+<div class="row g-4">
+  {% for post in cards %}
+  {% if post.data.draft or post in highlights %}
+  {% else %}
+  <div class="col-md-6 col-lg-4">
+    <div class="card h-100 post-card" onclick="return undefined;document.location='{{ post.url }}';" style="cursor:pointer;">
+      <a href="{{ post.url }}">
+        <img src="{{ post.data.featured_image }}" class="card-img-top" alt="{{ post.data.title }}"
+          style="width: 100%; height: 120px; object-fit: cover;">
+      </a>
+      <div class="card-body">
+        <h5 class="card-title" style="font-weight: bolder;font-size:1em;">{{ taglist(post.data.tags) }}</h5>
+        <a href="{{ post.url }}" style="text-decoration:none;color:inherit;">
+          <h5 class="card-title" style="font-weight: bolder;">{{ post.data.title }}</h5>
+          <p class="card-text">{{ post.data.excerpt }}</p>
+          <p class="card-text" style="color:grey;font-size:0.75em;">
+            <i class="fas fa-calendar-alt"></i>
+            {{ post.data.date | format_date }}
+          </p>
+        </a>
+        <!--
+        <a href="{{ post.url }}" class="btn btn-secondary">Read more</a>
+        -->
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+{% endmacro %}
+
+{% macro paginationlist(pagination) %}
+
+<div style="display:flex;flex-direction: row;width:100%;justify-content: space-between;margin:8px 0;font-size: 1.5em;">
+
+  <div>
+    <a href="{% if pagination.previousPageLink %}/{% else %}{% endif %}"
+      class="btn btn-outline-primary {% if not pagination.previousPageLink %}disabled{% endif %}">&lt;&lt;</a>
+    <a href="{% if pagination.previousPageLink %}{{ pagination.previousPageLink }}{% else %}{% endif %}"
+      class="btn btn-outline-primary {% if not pagination.previousPageLink %}disabled{% endif %}">&lt;</a>
+  </div>
+
+  <div>
+    <select onchange="document.location = event.target.value == 1 ? '/' : `/page-${event.target.value}`">
+      {% for n in range(0, pagination.pages.length) %}
+      <option value="{{ n + 1 }}" {% if n==pagination.pageNumber %}selected{% endif %}>Page {{ n + 1 }} of {{
+        pagination.pages.length }}</option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <div>
+    <a href="{% if pagination.nextPageLink %}{{ pagination.nextPageLink }}{% else %}{% endif %}"
+      class="btn btn-outline-primary {% if not pagination.nextPageLink %}disabled{% endif %}">&gt;</a>
+    <a href="{% if pagination.nextPageLink %}/page-{{ pagination.pages.length }}/{% else %}{% endif %}"
+      class="btn btn-outline-primary {% if not pagination.nextPageLink %}disabled{% endif %}">&gt;&gt;</a>
+  </div>
+
+</div>
+
+{% endmacro %}
+
+{% macro pagelink(page) %}
+{{ "/" if page == 1 else "/page-" + page }}
+{% endmacro %}}

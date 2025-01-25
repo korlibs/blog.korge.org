@@ -1,0 +1,19 @@
+---
+pagination:
+  data: collections.category
+  size: 1
+  alias: category
+  filter:
+    - all
+permalink: /category/{{ category | slug }}/index.html
+layout: default
+---
+
+<h1>{{ pagination.items[0] | capitalize }}</h1>
+
+{% import "macros.html" as macros %}
+
+{% set pageName = pagination.items[0] %}
+
+{{ macros.cardlist(collections.category[0] | reverse) }}
+

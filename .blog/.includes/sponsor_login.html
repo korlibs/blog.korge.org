@@ -1,0 +1,52 @@
+{% if sponsored || (sponsor_tier != null && sponsor_tier > 0) %}
+{% if sponsored(sponsor_tier) %}
+<div class="sponsor_base sponsor_thanks">
+    <h3>Thanks for being my sponsor, {{ session.login }}! 😄</h3>
+    <!--LOGIN INFO: {{ session }} - ${{ session.price }} -->
+    <p>Thanks to you, I can continue working on my libraries, writing articles and making courses!</p>
+    <a href="/logout" class="btn" style="border-radius:10px;background:#6363d7;border:0;color:white;padding: 3px 9px;">Logout</a>
+</div>
+{% else %}
+<script>
+    function loginGithub() {
+        document.location = `https://github.com/login/oauth/authorize?client_id=22ab064c04a5197fed4a&scope=read:user&redirect_uri=https://blog.korge.org/login/oauth/authorize`
+    }
+</script>
+<div id="sponsor-content">
+    {% unless sponsor_no_hide %}
+    <div style="width: 100%;height: 4em;position:relative;margin-top:-4em;background:linear-gradient(var(--bkg-color-transparent) 0%, var(--bkg-color) 75%);"></div>
+    {% endunless %}
+    <div class="sponsor_base sponsor_down">
+        {% if session.isSponsor %}
+        <!-- not enough for this post -->
+        <h3>Thanks for being my sponsor, {{ session.login }}! 😄</h3>
+        <p>
+            Unfortunately for this post you have to be in a tier of ${{ sponsor_tier }} or more, your current sponsorship is ${{ session.price }}.
+            Please, consider upgrading your subscription here: <a href="https://github.com/sponsors/soywiz" target="_blank">https://github.com/sponsors/soywiz</a></p>
+        </p>
+        <p>
+            <a href="/logout" class="btn" style="border-radius:10px;background:#6363d7;border:0;color:white;padding: 3px 9px;">Logout</a>
+        </p>
+        {% elseif session.platform %}
+        <!-- logged in, but not a sponsor -->
+        <h3>Howdy {{ session.login }}!</h3>
+        <p>
+            Unfortunately for this post you have to be my sponsor with a tier of ${{ sponsor_tier }} or more.
+            Please, consider subscribing here: <a href="https://github.com/sponsors/soywiz" target="_blank">https://github.com/sponsors/soywiz</a></p>
+        </p>
+        <p>
+            <a href="/logout" class="btn" style="border-radius:10px;background:#6363d7;border:0;color:white;padding: 3px 9px;">Logout</a>
+        </p>
+        {% else %}
+        <h3>Full article is exclusive for my GitHub Sponsors (${{ sponsor_tier }} or more), that help me to continue with my projects</h3>
+        <p>You can become my sponsor here to get your login information: <a href="https://github.com/sponsors/soywiz" target="_blank">https://github.com/sponsors/soywiz</a>.</p>
+        <!--
+        <p>For KorGE related content. We are also publishing this coding sessions on <a href="https://www.patreon.com/korgegameengine" target="_blank">Patreon</a>.</p>
+        -->
+        <p>If you are already a sponsor, please, log-in here:</p>
+        <button onclick="loginGithub()" style="border-radius:10px;background:#6363d7;border:0;color:white;padding: 3px 9px;"><i class="fab fa-github"></i> Login with github</button>
+        {% end %}
+    </div>
+</div>
+{% end %}
+{% end %}

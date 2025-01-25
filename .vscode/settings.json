@@ -1,0 +1,17 @@
+{
+    "deno.enable": true,
+    "files.exclude": {
+        ".old/**": true,
+        ".obsidian/**": true,
+    },
+    "search.exclude": {
+        "**/node_modules": true,
+        ".old/**": true,
+        ".obsidian/**": true,
+        ".site/**": true,
+        ".static/**": true,
+    },
+    "files.associations": {
+        "*.html": "njk"
+    },
+}

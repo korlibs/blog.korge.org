@@ -1,0 +1,150 @@
+---
+layout: default
+disqus: false
+archive: false
+post_class: post-template
+---
+
+<!-- Begin Article
+================================================== -->
+
+{% set feature_image = image | default(feature_image) %}
+
+{% if feature_image %}
+    {% set real_feature_image = feature_image %}
+{% endif %}
+
+<div class="row">
+
+		<!-- Sidebar -->
+        <div class="col-sm-4 order-last order-md-first">
+        {% include "sidebar.html" %}
+        </div>
+		
+
+		<!-- Post -->        
+        {% set author = site.authors[author] %}
+        
+		<div class="col-sm-8">
+            {% include "debug.html" %}
+
+			<div class="mainheading">
+                
+                <!-- Post Categories -->
+                <div class="after-post-tags">
+                    <ul class="tags">
+                        {% set categories = [category] %}
+                        {% set sortedCategories = categories | sort %}
+                        {% for category in sortedCategories %}
+                        <li>
+                         <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{ category }}</a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <!-- End Categories -->
+                
+                <!-- Post Title -->
+				<h1 class="posttitle">{{ title }}</h1>
+                <!-- Post Date -->
+                <p>
+                    <small>
+                        <span class="post-date"><time class="post-date" datetime="{{ date | date("%Y-%m-%d") }}">{{ date | date_short }}</time></span>
+                        {% if last_modified_at %}
+                        (Updated: <time datetime="{{ last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ last_modified_at | date_short }}</time>)
+                        {% endif %}
+                    </small>
+                </p>
+
+            </div>
+
+			<!-- Post Featured Image -->
+			{% if real_feature_image %}
+            {% if false %}
+                <div style="position:relative;width: 100%; aspect-ratio: 18 / 9;overflow: hidden;">
+                    <div
+                            class="image"
+                            style="
+                                position:relative;
+                                left:0;top:0;
+                                width: 100%; height: 100%;
+                                background-image: url('{{ real_feature_image | absolute_url }}');
+                                filter: blur(20px);
+                                background-position: center;
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                overflow: hidden;
+                            "
+                    ></div>
+                    <div style="position:absolute;left:0;top:0;width:100%;height:100%;display: flex;align-content: center;align-items: center;">
+                        <div style="width:auto;margin:auto auto;font-size:1em;color:#aaa;background:rgba(0,0,0,0.6);padding: 3px 9px;border-radius:8px;">
+                            {% include "become_sponsor_text" %}
+                        </div>
+                    </div>
+
+                </div>
+                {% else %}
+                <div>
+                    <img src="{{ real_feature_image }}" style="width: 100%;" title="{{ title }}" alt="{{ title }}" />
+                </div>
+                {% endif %}
+            {% endif %}
+			<!-- End Featured Image -->
+
+			<!-- Post Content -->
+			<div class="article-post">
+				{{ content | safe }}
+                <div class="clearfix"></div>
+			</div>
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation mt-4 prevnextlinks">
+              {% if previous.url %}
+                <div class="col-md-6 rightborder pl-0">
+                    <a class="thepostlink" href="{{previous.url | absolute_url}}">&laquo; {{previous.title}}</a>
+                </div>
+              {% endif %}
+              {% if next.url %}
+                <div class="col-md-6 text-right pr-0">
+                    <a class="thepostlink" href="{{next.url | absolute_url}}">{{next.title}} &raquo;</a>
+                </div>
+              {% endif %}
+            </div>
+            <!-- End Prev/Next -->
+            
+            
+             <!-- Author Box -->
+                {% if author %}				
+				<div class="row post-top-meta">
+					<div class="col-md-2">
+						<img class="author-thumb" src="https://www.gravatar.com/avatar/{{ author.gravatar }}?s=250&d=mm&r=x" alt="{{ author.display_name }}">
+					</div>
+					<div class="col-md-10">
+						<a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+						<span class="author-description">{{ author.description }}</span>						
+					</div>
+				</div>				
+                {% endif %}
+            
+            
+            <!-- Begin Comments
+            ================================================== -->
+            <section>
+            <div id="comments">                          
+                {% include "disqus.html" %} 
+            </div>
+            </section>
+            <!--End Comments
+            ================================================== -->
+
+
+
+		</div>
+		<!-- End Post -->
+        
+        
+
+	</div>
+
+<!-- End Article
+================================================== -->

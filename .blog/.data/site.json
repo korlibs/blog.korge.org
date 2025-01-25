@@ -1,0 +1,60 @@
+{
+    "name": "KorGE Game Engine",
+    "title": "KorGE Game Engine",
+    "description": "Kotlin Multiplatform Game Engine Blog",
+    "meta_description": "Kotlin Multiplatform Game Engine.",
+    "logo": "assets/images/logo-wide.svg",
+    "favicon": "assets/images/favicon.ico",
+    "paginate": "12",
+    "url": "https://blog.korge.org",
+    "email": "korge.game.engine@gmail.com",
+    "google_analytics": "G-WC3WXWPQSR",
+    "disqus": "korgegameengine",
+    "authors": {
+        "soywiz": {
+            "name": "Carlos Ballesteros Velasco",
+            "display_name": "soywiz",
+            "gravatar": "52a7e0168b945855f23900c0a8da7787",
+            "email": "soywiz@gmail.com",
+            "web": "https://soywiz.com/",
+            "twitter": "https://twitter.com/cballesterosvel",
+            "description": "Author of KorGE."
+        },
+        "ziwyos": {
+            "name": "Carlos Ballesteros Velasco",
+            "display_name": "ziwyos",
+            "gravatar": "52a7e0168b945855f23900c0a8da7787",
+            "email": "soywiz@gmail.com",
+            "web": "https://soywiz.com/",
+            "twitter": "https://twitter.com/cballesterosvel",
+            "description": "EGroK fo rohtuA."
+        },
+        "rezmike": {
+            "name": "Mikhail Reznichenko",
+            "display_name": "rezmike",
+            "gravatar": "",
+            "email": "",
+            "web": "https://github.com/RezMike",
+            "twitter": "",
+            "description": ""
+        },
+        "nico": {
+            "name": "Nicolai Emig",
+            "display_name": "emign",
+            "gravatar": "",
+            "email": "",
+            "web": "https://github.com/emign",
+            "twitter": "",
+            "description": ""
+        },
+        "geoge-koller": {
+            "name": "George Koller",
+            "display_name": "georgekoller",
+            "gravatar": "798d72655741799a581b316a745e9ea1",
+            "email": "",
+            "web": "https://funuage.org/",
+            "twitter": "",
+            "description": ""
+        }
+    }
+}

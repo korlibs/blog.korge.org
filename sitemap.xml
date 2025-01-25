@@ -1,0 +1,27 @@
+---
+layout: null
+permalink: /sitemap.xml
+exclude: 'yes'
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for page in site.posts %}
+    {% if layout != nil and page.layout != 'feed' %}
+    <url>
+        <loc>{{ site.url }}{{ page.url | remove: 'index.html' | absolute_url | xml_escape }}</loc>
+        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+        <priority>{{ page.priority | default: "0.75" }}</priority>
+    </url>
+    {% endif %}
+    {% endfor %}
+    {% for page in site.pages %}
+    {% if page.layout != nil and page.layout != 'feed' %}
+    <url>
+        <loc>{{ site.url }}{{ page.url | remove: 'index.html' | absolute_url | xml_escape }}</loc>
+        {% set last_mod = page.date | date_to_xmlschema %}
+        {% if last_mod %}<lastmod>{{ last_mod }}</lastmod>{% endif %}
+        <priority>{{ page.priority | default: "0.1" }}</priority>
+    </url>
+    {% endif %}
+    {% endfor %}
+</urlset>

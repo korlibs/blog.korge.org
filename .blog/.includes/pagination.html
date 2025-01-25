@@ -1,0 +1,22 @@
+{%- set page = (pagination.pageNumber + 1) | default(1) -%}
+{%- set total_pages = (collections.posts.length / 12) | round(0, "ceil") %}
+
+{% import "macros.html" as macros %}
+
+<nav class="pagination" role="pagination">
+    {% if page > 1 %}
+    <a class="newer-posts" href="{{ macros.pagelink(page - 1) | absolute_url }}" title="Previous Page">&laquo; Newer </a>
+    {% else %}
+    <a class="newer-posts" title="Previous Page" disabled style="color:#777;">&laquo; Newer</a>
+    {% endif %}
+    <select onchange="document.location.href = (this.value <= 1) ? '/' : `/page-${this.value}`" style="border:none;text-transform:uppercase;font: 13px Rubik;font-weight: 500;background-color:var(--bkg-color);color:var(--text-color);">
+        {% for n in range(1, total_pages + 1) %}
+        <option {% if n == page %} selected{% endif %} value="{{ n }}">Page {{n}} of {{total_pages}}</option>
+        {% endfor %}
+    </select>
+    {% if page < total_pages %}
+    <a class="older-posts" href="{{ macros.pagelink(page + 1) | absolute_url }}" title="Next Page">Older &raquo;</a>
+    {% else %}
+    <a class="older-posts" title="Next Page" disabled style="color:#777;">Older &raquo;</a>
+    {% endif %} 
+</nav>
