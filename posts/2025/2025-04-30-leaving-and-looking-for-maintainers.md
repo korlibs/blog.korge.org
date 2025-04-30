@@ -5,6 +5,7 @@ author: soywiz
 tags:
   - whatshappening
 category: Videodigest
+date: 2025-04-30T12:00:00
 ---
 ![[bgsky.jpg]]
 
