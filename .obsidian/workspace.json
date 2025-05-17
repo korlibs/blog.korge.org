@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2025/2025-04-30-leaving-and-looking-for-maintainers.md",
+                "file": "posts/2025/2025-05-17-korge-6.0.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-04-30-leaving-and-looking-for-maintainers"
+              "title": "2025-05-17-korge-6.0"
             }
           }
         ]
@@ -142,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 308.5
+    "width": 200
   },
   "right": {
     "id": "79a69aff0f75eeea",
@@ -158,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/2025/2025-04-30-leaving-and-looking-for-maintainers.md",
+                "file": "posts/2025/2025-05-17-korge-6.0.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2025-04-30-leaving-and-looking-for-maintainers"
+              "title": "Outline of 2025-05-17-korge-6.0"
             }
           }
         ]
@@ -192,6 +192,9 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "6.0.png",
+    "posts/2025/2025-04-30-leaving-and-looking-for-maintainers.md",
+    "posts/2025/2025-05-17-korge-6.0.md",
     "Posts.md",
     "posts/2024/2024-01-08-/jobes-legacy-twitch-channel.md",
     "posts/2024/2024-08-21-/korge-forge-2024.2.0.2.md",
@@ -225,9 +228,6 @@
     "posts/2022/2022-06-27-korge-hotreloading.md",
     "posts/2017/2017-01-29-first-public-release.md",
     "posts/2022/2022-10-24-korge-mascots.md",
-    "posts/2020/2020-10-07-korge-tutorial-writing-2048-game-step-4-data-saving.md",
-    "posts/2020/2020-07-28-korge-tutorial-writing-2048-game-step-3-animation.md",
-    "posts/2020/2020-07-01-korge-tutorial-writing-2048-game-step-2-controls.md",
     "images/2.2",
     "images/jam",
     "images/3.0",
