@@ -7,6 +7,8 @@ category: Tutorials
 date: 2020-06-2T00:00:00Z
 tags:
 ---
+![[korge-tutorial-writing-2048-game-step-0.jpg]]
+
 [KorGE](https://korge.org/) is an [open source](https://github.com/korlibs/korge) multiplatform game engine written
 in [Kotlin](https://kotlinlang.org/). You can use it to develop your own games of various genres targeting JVM, Web,
 Android and iOS.  
