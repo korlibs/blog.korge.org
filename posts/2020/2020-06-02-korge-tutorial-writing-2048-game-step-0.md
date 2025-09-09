@@ -12,7 +12,7 @@ Android and iOS.
 In this tutorial I will guide you through the steps of writing a 2048 game using KorGE and Kotlin.You can check the
 resulting game [here](https://rezmike.github.io/2048/). The source code is [on GitHub](https://github.com/RezMike/2048).
 
-![](/assets/images/52348213274.png)
+![](/images/IMG_0103.jpeg)
 
 This tutorial will have several parts - steps. In them, we will discuss the following features of KorGE:
 
