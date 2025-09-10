@@ -99,12 +99,19 @@ class MyScene : Scene() {
 It's a template code. You can launch the project _(the section below)_ and see what it does. The important part here is
 the **Korge(...)** call. It lets you specify the stage's size, background color and some other elements.
 
-Let's define width, height, title and background color of our game. Also let's remove unnecessary stuff inside **
-Korge(...) { ... }**:
+Let's define width, height, title and background color of our game. Also let's remove all unnecessary stuff inside **sceneMain()**:
 
 ```kotlin
 suspend fun main() = Korge(width = 480, height = 640, title = "2048", bgcolor = RGBA(253, 247, 240)) {
-	// TODO: we will write code for our game here later
+	val sceneContainer = sceneContainer()
+
+	sceneContainer.changeTo { MyScene() }
+}
+
+class MyScene : Scene() {
+	override suspend fun SContainer.sceneMain() {
+		// TODO: We will write all of our code here!
+	}
 }
 ```
 
