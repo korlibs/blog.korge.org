@@ -34,7 +34,7 @@ Well, let's get started!
 
 First, we need to create a new project for our game. There are two ways to do it:
 
-### 1. Using KorGE Intellij plugin
+### 1. Using KorGE Forge
 
 KorGE provides a game engine (slightly changed IntelliJ community), that allows you to create KorGE projects. You can
 read more about installing it [here](https://forge.korge.org/).
