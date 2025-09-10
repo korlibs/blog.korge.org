@@ -36,15 +36,13 @@ First, we need to create a new project for our game. There are two ways to do it
 
 ### 1. Using KorGE Intellij plugin
 
-KorGE provides an IntelliJ plugin, that allows you to create KorGE projects.You can
-read [this guide](https://korlibs.soywiz.com/korge/setup/intellij-plugin/) or
-watch [this video](https://www.youtube.com/watch?v=ANMiHx3z_No) to know how to install the plugin and create a new
-project via it.
+KorGE provides a game engine (slightly changed IntelliJ community), that allows you to create KorGE projects. You can
+read more about installing it [here](https://forge.korge.org/).
 
 ### 2. Downloading/cloning project template
 
 You can clone [the template project](https://github.com/korlibs/korge-hello-world) from GitHub or
-download [this archive](https://github.com/korlibs/korge-hello-world/archive/master.zip) with it.  
+[download it directly](https://github.com/korlibs/korge-hello-world/archive/master.zip).  
 Once we have a new project, we need to configure it for the game.
 
 # Game configuration
@@ -52,14 +50,12 @@ Once we have a new project, we need to configure it for the game.
 In the new project you will have the **build.gradle.kts** file that looks like this:
 
 ```kotlin
+import korlibs.korge.gradle.*
+
+plugins {
+	alias(libs.plugins.korge)
+}
 ...
-buildscript {
-	...
-}
-apply<KorgeGradlePlugin>()
-korge {
-   id = "com.example.example"
-}
 ```
 
 The **korge** block is the place where you can specify some information about the game. For example, let's write id
