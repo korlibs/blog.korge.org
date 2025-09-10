@@ -71,8 +71,7 @@ korge {
 _**Note:** you can read the full configuration
 description [here](https://docs.korge.org/targets/#the-korge-extension)._
 
-Now let's go to the main function that is executed when the game is launched. It locates at **
-src/main.kt**. It should look like this:
+Now let's go to the main function that is executed when the game is launched. It locates at **src/main.kt**. It should look like this:
 
 ```kotlin
 ...
