@@ -28,7 +28,7 @@ This tutorial will have several parts - steps. In them, we will discuss the foll
 * and more!
 
 Well, let's get started!  
-**_Note: you need to install Java JDK and Intellij IDEA before start._**
+**_Note: you need to install Java JDK before starting._**
 
 # Creating new project
 
