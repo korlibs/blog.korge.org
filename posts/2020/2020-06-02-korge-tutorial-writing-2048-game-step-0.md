@@ -69,24 +69,30 @@ korge {
 ```
 
 _**Note:** you can read the full configuration
-description [here](https://korlibs.soywiz.com/korge/setup/gradle-plugin/#the-korge-extension)._
+description [here](https://docs.korge.org/targets/#the-korge-extension)._
 
 Now let's go to the main function that is executed when the game is launched. It locates at **
-src/commonMain/kotlin/main.kt**. It should look like this:
+src/main.kt**. It should look like this:
 
 ```kotlin
-suspend fun main() = Korge(width = 512, height = 512, bgcolor = Colors["#2b2b2b"]) {
-	val minDegrees = (-16).degrees
-	val maxDegrees = (+16).degrees
-	val image = image(resourcesVfs["korge.png"].readBitmap()) {
-		rotation = maxDegrees
-		anchor(.5, .5)
-		scale(.8)
-		position(256, 256)
-	}
-	while (true) {
-		image.tween(image::rotation[minDegrees], time = 1.seconds, easing = Easing.EASE_IN_OUT)
-		image.tween(image::rotation[maxDegrees], time = 1.seconds, easing = Easing.EASE_IN_OUT)
+...
+
+class MyScene : Scene() {
+	override suspend fun SContainer.sceneMain() {
+		val minDegrees = (-16).degrees
+		val maxDegrees = (+16).degrees
+
+		val image = image(resourcesVfs["korge.png"].readBitmap()) {
+			rotation = maxDegrees
+			anchor(.5, .5)
+			scale(0.8)
+			position(256, 256)
+		}
+
+		while (true) {
+			image.tween(image::rotation[minDegrees], time = 1.seconds, easing = Easing.EASE_IN_OUT)
+			image.tween(image::rotation[maxDegrees], time = 1.seconds, easing = Easing.EASE_IN_OUT)
+		}
 	}
 }
 ```
@@ -118,11 +124,10 @@ After the previous changes let's launch our game and see that everything works c
 # Game launch
 
 Since KorGE supports several platforms, you can launch your game on any of them. There are official guides about game
-launch on [Desktop (JVM)](https://korlibs.soywiz.com/korge/targets/jvm/)
-, [Web (JS)](https://korlibs.soywiz.com/korge/targets/web/)
-, [Desktop (Native)](https://korlibs.soywiz.com/korge/targets/desktop/)
-, [Android](https://korlibs.soywiz.com/korge/targets/android/)
-and [iOS](https://korlibs.soywiz.com/korge/targets/android/). I prefer to use JVM because it's the simplest and fastest
+launch on [Desktop (JVM)](https://docs.korge.org/targets/desktop/)
+, [Web (JS)](https://docs.korge.org/targets/web/)
+, [Android](https://docs.korge.org/targets/android/)
+and [iOS](https://docs.korge.org/targets/ios/). I prefer to use JVM because it's the simplest and fastest
 way of testing a KorGE project.In order to launch your game on JVM, you should write this line in terminal:
 
 ```kotlin
