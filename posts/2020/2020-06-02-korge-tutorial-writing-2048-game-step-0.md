@@ -137,19 +137,13 @@ way of testing a KorGE project.In order to launch your game on JVM, you should w
 To simplify game launch, I suggest you use Intellij's interface for running configurations. There is a special drop-down
 element at the top of the Intellij's window:
 
-![](/assets/images/52348213274%20(1).jpg)
+![](/images/IMG_0104.jpeg)
 
-You need to click on it and select "Edit Configurations...". You'll see the "Run/Debug Configurations" window. Now click
-on the "+" button at the top left of the window, select "Gradle" and specify your Gradle project and Gradle task **
-runJvm** like here:
+launch your game by clicking the green triangle button at the top of KorGE Forge.
 
-![](/assets/images/52348213274%20(2).jpg)
-
-After saving changes you will be able to launch your game by clicking the green triangle button at the top of
-Intellij.  
 At this moment, when launching the game, we'll see just a beige window with the specified size and title:
 
-![](/assets/images/52348213274%20(3).jpg)
+![](/images/IMG_0105.jpeg)
 
 In [the next part](https://blog.korge.org/2020/06/korge-tutorial-writing-2048-game-step-1.html) of the tutorial, we'll
 know how to use graphics and text views and how to position them. We'll add a logo, score views and a background for our
