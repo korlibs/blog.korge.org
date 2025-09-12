@@ -38,6 +38,7 @@ First, we need to create a new project for our game. There are two ways to do it
 
 KorGE provides a game engine (slightly changed IntelliJ community), that allows you to create KorGE projects. You can
 read more about installing it [here](https://forge.korge.org/).
+Then click on create new project and choose the korge-hello-world starter template and give it a name!
 
 ### 2. Downloading/cloning project template
 
@@ -63,8 +64,9 @@ and name of the game:
 
 ```kotlin
 korge {
-	id = "com.example.2048"
+	id = "com.example.game2048"
 	name = "2048"
+	targetDefault()
 }
 ```
 
@@ -102,10 +104,19 @@ the **Korge(...)** call. It lets you specify the stage's size, background color 
 Let's define width, height, title and background color of our game. Also let's remove all unnecessary stuff inside **sceneMain()**:
 
 ```kotlin
-suspend fun main() = Korge(width = 480, height = 640, title = "2048", bgcolor = RGBA(253, 247, 240)) {
-	val sceneContainer = sceneContainer()
+suspend fun main(): Unit = Korge(
+    title = "2048",
+    backgroundColor = RGBA(253, 247, 240),
+    windowSize = Size(
+        width = 480,
+        height = 640,
+    ),
+    //gameId is associated with the location of storage, which contains `history` and `best`
+    gameId = "com.example.game2048",
+) {
+    val sceneContainer = sceneContainer()
 
-	sceneContainer.changeTo { MyScene() }
+    sceneContainer.changeTo { MyScene() }
 }
 
 class MyScene : Scene() {
@@ -140,8 +151,8 @@ way of testing a KorGE project.In order to launch your game on JVM, you should w
 ./gradlew runJvm
 ```
 
-To simplify game launch, I suggest you use Intellij's interface for running configurations. There is a special drop-down
-element at the top of the Intellij's window:
+To simplify game launch, I suggest you use KorGE Forge's interface for running configurations. There is a special drop-down
+element at the top of Forge's window:
 
 ![](/images/IMG_0104.jpeg)
 
