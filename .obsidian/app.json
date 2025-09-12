@@ -4,5 +4,6 @@
   "alwaysUpdateLinks": true,
   "propertiesInDocument": "visible",
   "trashOption": "local",
-  "showUnsupportedFiles": false
+  "showUnsupportedFiles": false,
+  "promptDelete": false
 }
