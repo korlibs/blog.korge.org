@@ -1,5 +1,5 @@
 ---
-title: KorGE Forge updated to 2024.2.0.2
+title: KorGE Forge updated to 2025.2.1
 permalink: /korge-forge-2025.2.1/
 sponsor_tier:
 author: FSaurenbach
