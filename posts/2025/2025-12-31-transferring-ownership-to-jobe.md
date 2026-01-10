@@ -9,7 +9,9 @@ date: 2025-12-31T12:00:00
 ---
 ![[bgsky.jpg]]
 
-I left the project by the end of April of 2025 but I decided to stay as an observer,
+A last message from soywiz (https://github.com/soywiz)
+
+I left the project by the end of April 2025, but I decided to stay as an observer,
 without working on the project, for the remaining of the year just in case someone
 offered to take ownership of the project. Since that didn't happen, I finally left.
 But in the end Jobe <https://github.com/jobe-m> offered to take the ownership and since
