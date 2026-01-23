@@ -18,7 +18,7 @@ But in the end Jobe <https://github.com/jobe-m> offered to take the ownership an
 he has been working on his project <https://www.twitch.tv/jobegamedev> Jobe's Legacy
 for quite a long time, can't find anyone better for this.
 
-Starting from this 2026, now the korge.game.engine mail, korge.org domain, social
+As of 2026, the korge.game.engine mail, korge.org domain, social
 networks and discord are owned by him, and I'm not involved in any way with it anymore.
 
 I personally desire Marko best wishes with his game, and if there is interest,
