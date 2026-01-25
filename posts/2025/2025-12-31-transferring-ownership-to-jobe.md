@@ -9,7 +9,7 @@ date: 2025-12-31T12:00:00
 ---
 ![[bgsky.jpg]]
 
-A last message from soywiz (https://github.com/soywiz)
+A last message from soywiz <https://github.com/soywiz>
 
 I left the project by the end of April 2025, but I decided to stay as an observer,
 without working on the project, for the remaining of the year just in case someone
