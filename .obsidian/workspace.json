@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/2025/korge-forge-2025.2.1.md",
+                "file": "posts/2026/2026-06-05-korge-is-alive.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "korge-forge-2025.2.1"
-            }
-          },
-          {
-            "id": "c913d3a2b36bc2ea",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "posts/2024/2024-08-21-/korge-forge-2024.2.0.2.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "korge-forge-2024.2.0.2"
+              "title": "2026-06-05-korge-is-alive"
             }
           }
         ]
@@ -47,7 +33,7 @@
       {
         "id": "76864fb90bed7692",
         "type": "tabs",
-        "dimension": 56.010568031704096,
+        "dimension": 40.66726780883679,
         "children": [
           {
             "id": "676a14eb0ccc2fd0",
@@ -64,7 +50,7 @@
       {
         "id": "75654169602d9b4d",
         "type": "tabs",
-        "dimension": 43.989431968295904,
+        "dimension": 59.33273219116322,
         "children": [
           {
             "id": "2fdb7c408d305d59",
@@ -156,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 398.5
   },
   "right": {
     "id": "79a69aff0f75eeea",
@@ -172,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "posts/2025/korge-forge-2025.2.1.md",
+                "file": "posts/2026/2026-06-05-korge-is-alive.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of korge-forge-2025.2.1"
+              "title": "Outline of 2026-06-05-korge-is-alive"
             }
           }
         ]
@@ -200,27 +186,36 @@
       "dbfolder:Create a new database table": false,
       "homepage:Open homepage": false,
       "omnisearch:Omnisearch": false,
-      "obsidian-excalidraw-plugin:Create new drawing": false,
       "obsidian-kanban:Create new board": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
+    "posts/2026/2026-06-05-korge-is-alive.md",
+    "posts/2025/2025-12-31-transferring-ownership-to-jobe.md",
+    "posts/2025/2025-09-12-korge-forge-2025.2.1.md",
+    "logo.svg",
+    "images/blog/logo-korge-fleks.jpg",
+    "images/blog",
+    "logo-korge-fleks.jpg",
+    "README.md",
+    "Blog Posts.md",
+    "about.md",
+    "posts/2026",
+    "Posts.md",
     "().md",
-    "posts/2025/korge-forge-2025.2.1.md",
     "images/korge-forge-2025-update.png",
     "posts/2025/Untitled.md",
     "posts/2024/2024-08-21-/korge-forge-2024.2.0.2.md",
     "posts/2024/2024-06-20-/korge-forge-6.1.1.md",
     "posts/2024/2024-06-13-/korge-forge-release.md",
-    "Posts.md",
     "images/6.0.png",
     "posts/2025/2025-05-17-korge-6.0.md",
     "6.0.png",
     "posts/2025/2025-04-30-leaving-and-looking-for-maintainers.md",
     "posts/2024/2024-01-08-/jobes-legacy-twitch-channel.md",
-    "Blog Posts.md",
     "Ideas.md",
     "Sandbox.md",
     "Posts Draft.md",
@@ -234,15 +229,7 @@
     "images/7001b1c1-a97a-4309-88cd-8d359b0a2bd1-bdbecb84-8829-4817-89fd-514e34479e56-0.jpg",
     "posts/2022/2022-11-29-sponsors-2022-nov-part4.md",
     "images/jam/twitter-banner-gamejam.png",
-    "assets/images/image-1.png",
-    "assets/images/titles/funguage.png",
-    "assets/images/favicon/android-icon-192x192.png",
     "posts/2024/2024-02-29-/korge-whats-happening-29-feb-2024.md",
-    "posts/2024/2024-02-22-/korge-whats-happening-22-feb-2024.md",
-    "posts/2024/2024-02-07-/korge-whats-happening-7-feb-2024.md",
-    "posts/2023/2023-10-05-/korge-5.0.md",
-    "posts/2023/2023-07-06-/dungeon-explorer-part-1.md",
-    "posts/2023/2023-05-23-korge-intellij-plugin-4.0.1.md",
     "images/2.2",
     "images/jam",
     "images/3.0",
@@ -250,8 +237,6 @@
     "images/mascot",
     "images/favicon/manifest.json",
     "images/favicon/favicon.ico",
-    "images/favicon/browserconfig.xml",
-    "images/favicon",
-    "images/ui"
+    "images/favicon/browserconfig.xml"
   ]
 }

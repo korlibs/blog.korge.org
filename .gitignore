@@ -13,3 +13,4 @@ _site
 /_jekyll/_site
 /node_modules
 /.blog/node_modules
+/package-lock.json
