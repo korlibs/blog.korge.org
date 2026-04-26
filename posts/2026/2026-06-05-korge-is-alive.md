@@ -9,11 +9,12 @@ tags:
   - KorGE
 draft: false
 ---
-![[images/blog/logo-korge-fleks.jpg|685]]
+
+![[logo-korge-fleks.jpg]]
 
 __KorGE is alive__
 
-If you follow our [Discord Server](https://discord.korge.org/) you might have noticed that there is some noise in the Korge universe. First of all Korge has a new owner and maintainer and second we have a plan where we want to go with Korge.
+If you were following our [Discord Server](https://discord.korge.org/) you might have noticed that there is some noise in the Korge universe. First of all Korge has a new owner and maintainer and second we have a plan where we want to go with Korge.
 
 1. Let me quickly inroduce myself. My name is [Marko Koschak](https://github.com/jobe-m). I work as a Software engineer and I am living with my family near Ulm in Germany. I took over the ownership of Korge from Carlos in January 2026. You might now me also from my [Twitch Channel](https://www.twitch.tv/jobegamedev) where I develop a game framework on top of Korge and Fleks ECS and together with that I build a 2D Jump'n run game. Since Korge is the base for my game I want to keep Korge up to date as good as I can. I do this all in my free time, thus I cannot develop Korge further alone. But I want to do my best to maintain the Korge and Korlibs projects and update their codebase and configuration to keep it alive.
 2. We (the community) have a Roadmap for Korge release 7. All started with my efforts to publish the Korlibs artefacts to its own namespace "org.korge" on Maven Central. It was the last wish from Carlos that we move it out of his namespace. Because of the not release-friendly setup of Korlibs this task took more than a month. Luckily I got help from a very talented Kotlin and Gradle expert, who helped me to merge all Korlibs repos back into one mono repo and who is currently optimizing the Gradle setup. A big shoutout to [CMalli](https://github.com/malliaridis)!

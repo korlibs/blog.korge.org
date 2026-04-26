@@ -108,6 +108,7 @@ columns:
       - { label: "streams", value: "streams", color: "hsl(147, 95%, 90%)"}
       - { label: "tutorial", value: "tutorial", color: "hsl(52, 95%, 90%)"}
       - { label: "tech", value: "tech", color: "hsl(124, 95%, 90%)"}
+      - { label: "KorGE", value: "KorGE", color: "hsl(95, 95%, 90%)"}
     config:
       enable_media_view: true
       link_alias_enabled: true
